@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  background: #fff5ee;
+}
+
+/* Header/Blog Title */
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  font-family: "Courgette", sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #bc8f8f;
+  box-shadow: 0 5px 10px #b03060;
+}
+
+.logo {
+  margin: 10px 20px -5px 20px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #b03060;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Fake image home page */
+.fakeimg-home {
+  background-color: #bc8f8f;
+  width: 40%;
+  padding: 30px;
+  box-shadow: 0 5px 10px #b03060;
+  float: left;
+  margin: 20px;
+  border-radius: 10px;
+  display: inline;
+  border-radius: 10px;
+}
+
+.fakeimg-video {
+  background-color: #bc8f8f;
+  width: 50%;
+  padding: 30px;
+  box-shadow: 0 5px 10px #b03060;
+  float: left;
+  margin: 20px;
+  border-radius: 10px;
+  display: inline;
+  border-radius: 10px;
+}
+/* Fake image  */
+.fakeimg {
+  background-color: #bc8f8f;
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 5px 10px #b03060;
+  float: left;
+  margin: 20px;
+  border-radius: 10px;
+}
+.card-photo {
+  box-shadow: 0 5px 10px #413641;
+  width: 300;
+  height: 300;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.text {
+  background-color: #bc8f8f;
+  width: 40%;
+  padding: 30px;
+  box-shadow: 0 5px 10px #b03060;
+  float: right;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 20px;
+  margin-top: 20px;
+  background: #dfd2d6;
+}
+
+/* Fake image encomendar */
+
+.fakeimg-encomendar {
+  background-color: #bc8f8f;
+  width: 40%;
+  padding: 30px;
+  box-shadow: 0 5px 10px #b03060;
+  float: left;
+  margin: 20px;
+  border-radius: 10px;
+  display: inline;
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #dfd2d6;
+  margin-top: 20px;
+}
+
+/* Style all font awesome icons https://fontawesome.com/ */
+/* Colocar no HTLM <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> */
+.fa {
+  color: #333;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
